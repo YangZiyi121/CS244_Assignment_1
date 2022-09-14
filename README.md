@@ -70,7 +70,7 @@ Wired network is more than **10 times** faster than wireless one.
 | Wired | 117 Mbits/s | 243 Mbits/s | 292 Mbits/s | 310 Mbits/s | 325 Mbits/s | 325 Mbits/s | 332 Mbits/s | 333 Mbits/s |
 | Wireless | 10.1 Mbits/s | 13.7 Mbits/s | 14.1 Mbits/s | 26.0 Mbits/s | 38.8 Mbits/s | 110 Mbits/s | 82.2 Mbits/s | 101 Mbits/s |
 
-![troughput](Assignment_1_Ziyi Yang_figure/throughput_time.png)
+![troughput](https://github.com/YangZiyi121/CS244_Assignment_1/blob/main/Assignment_1_Ziyi%20Yang_figure/throughput_time.png)
 
 - **Reasons**
     - Wired network has more **stable** connection, since it is **physical connection**
@@ -157,7 +157,7 @@ iperf3 -c 117.102.109.186 -p 5202 -O 1 -t 60 -P 5
 | 10 | 498 Mbits/sec | 495 Mbits/sec | 3.48 GBytes | 3.46 GBytes |
 | 20 | 500 Mbites/sec | 498 Mbits/sec | 3.49 GBytes | 3.48 GBytes |
 
-![Untitled](Assignment_1_Ziyi Yang_figure/throughput_client.png)
+![Untitled](https://github.com/YangZiyi121/CS244_Assignment_1/blob/main/Assignment_1_Ziyi%20Yang_figure/throughput_client.png)
 
 - **Reasons**
 
@@ -187,7 +187,7 @@ When the thread number is **big** → the throughput needed used up the capacity
 | Normal | 161 Mbits/s | 217 Mbits/s | 299 Mbits/s | 305 Mbits/s | 325 Mbits/s | 321 Mbits/s | 347 Mbits/s | 296 Mbits/s |
 | Reverse | 45.5 Mbits/s | 46.3 Mbits/s | 39.1 Mbits/s | 38.4 Mbits/s | 35.5 Mbits/s | 24.1 Mbits/s | 35.5 Mbits/s | 29.8 Mbits/s |
 
-![Untitled](Assignment_1_Ziyi Yang_figure/reverse.png)
+![Untitled](https://github.com/YangZiyi121/CS244_Assignment_1/blob/main/Assignment_1_Ziyi%20Yang_figure/reverse.png)
 
 - **Reasons**
   
@@ -209,7 +209,7 @@ iperf3 -c 117.102.109.186 -p 5203 --window windowSize
   | sender   | 239 kbits/s | 1.48 Mbits/s | 2.73 Mbits/s | 4.24 Mbits/s | 4.47 Mbits/s | 5.43 Mbits/s | 5.73 Mbits/s |
   | receiver | 239 kbits/s | 1.48 Mbits/s | 2.73 Mbits/s | 4.24 Mbits/s | 4.44 Mbits/s | 5.17 Mbits/s | 5.04 Mbits/s |
 
-![windwSize.png](Assignment_1_Ziyi Yang_figure/windowSize.png)
+![windwSize.png](https://github.com/YangZiyi121/CS244_Assignment_1/blob/main/Assignment_1_Ziyi%20Yang_figure/windowSize.png)
 
 6. **iPerf Server on U280**
 
@@ -217,7 +217,7 @@ iperf3 -c 117.102.109.186 -p 5203 --window windowSize
 
 Following the github library [https://github.com/fpgasystems/Vitis_with_100Gbps_TCP-IP#configure-tcp-stack](https://github.com/fpgasystems/Vitis_with_100Gbps_TCP-IP#configure-tcp-stack) , the iPerf kernel (User KRNL) with tcp-ip stack was ran on board U280. The architecture overview is shown as below. 
 
-![Screen Shot 2022-09-12 at 12.13.16 PM.png](Assignment_1_Ziyi Yang_figure/architecture.png)
+![Screen Shot 2022-09-12 at 12.13.16 PM.png](https://github.com/YangZiyi121/CS244_Assignment_1/blob/main/Assignment_1_Ziyi%20Yang_figure/architecture.png)
 
  I directly connected a **NVIDIA-Mellanox-ConnectX-6 SmartNIC to the** U280 board ****using **100Gbps DAC cable.** The NIC is acting as an **iPerf client** and the board is the **iPerf server**. 
 
@@ -225,7 +225,7 @@ Following the github library [https://github.com/fpgasystems/Vitis_with_100Gbps_
 
 **IPof U280**: 10.72.138.18
 
-![U280_iperf.png](Assignment_1_Ziyi Yang_figure/U280_iperf.png)
+![U280_iperf.png](https://github.com/YangZiyi121/CS244_Assignment_1/blob/main/Assignment_1_Ziyi%20Yang_figure/U280_iperf.png)
 
 - **Result**
 
@@ -273,7 +273,7 @@ owping -c num 10.72.138.15
 | Delay min/median/max (client → server) | 52.5/52.5/52.5 ms, (err=504 ms) | 50.2/51/53.3 ms, (err=504 ms) | 56.4/57.1/58.4 ms, (err=504 ms) | 57/57.6/61.2 ms, (err=504 ms) | 62.6/63.5/67.4 ms, (err=504 ms) | 63.9/64.9/68.8 ms, (err=504 ms) |
 | Delay min/median/max (server → client) | -42.6/-42.5/-42.4 ms, (err=504 ms) | -49/-48.7/-47.1 ms, (err=504 ms) | -55.1/-54.7/-17 ms, (err=504 ms) | -55.9/-55.3/-18.8 ms, (err=504 ms) | -61.8/-61.3/-42.4 ms, (err=504 ms) | -63.4/-62.6/-28.3 ms, (err=504 ms) |
 
-![Untitled](Assignment_1_Ziyi Yang_figure/delay.png)
+![Untitled](https://github.com/YangZiyi121/CS244_Assignment_1/blob/main/Assignment_1_Ziyi%20Yang_figure/delay.png)
 
 - **Reasons**
 
