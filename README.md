@@ -191,7 +191,7 @@ When the thread number is **big** → the throughput needed used up the capacity
 
 - **Reasons**
   
-    Theoretically, no matter client sends or server sends, the throughputs should be the same since they have the same routing. However, in this experiment, it varies a lot. In my opinion, I feel it is because that the sever is public and busy, resulting in **queueing** for sending packets.
+    Theoretically, no matter client sends or server sends, the throughputs should be similar since they have similar routing distance. However, in this experiment, it varies a lot. In my opinion, I feel it is because that the sever is public and busy, resulting in **queueing** for sending packets.
 5. **Adjust window size**
 
 * **Discription**
